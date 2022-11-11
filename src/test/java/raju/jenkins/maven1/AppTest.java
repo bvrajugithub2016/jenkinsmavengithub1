@@ -19,7 +19,7 @@ public class AppTest
 		
 		String gitamTitle =  driver.getTitle();
 		boolean result =  gitamTitle.contains("University");
-		Assert.assertTrue(result, "Title doesn't contain the word University");
+		Assert.assertTrue(result, "Title does not contain the word University");
 		driver.quit();
 	}
 }
