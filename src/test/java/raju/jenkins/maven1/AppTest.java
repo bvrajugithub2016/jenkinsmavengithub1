@@ -14,31 +14,31 @@ public class AppTest
 	@Test
 	public void myStartBrowser(){
 		
-		//String browserName =  System.getProperty("browser");
+		String browserName =  System.getProperty("browser");
 		
-		WebDriver driver = null;
+ 		WebDriver driver = null;
 		
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		System.out.println("Launching Chrome Browser");
+// 		WebDriverManager.chromedriver().setup();
+// 		driver = new ChromeDriver();
+// 		System.out.println("Launching Chrome Browser");
 		
-// 		switch(browserName){
-// 			case "Chrome":
-// 							WebDriverManager.chromedriver().setup();
-// 							driver = new ChromeDriver();
-// 							System.out.println("Launching Chrome Browser");
-// 							break;	
-// 			case "Firebox":
-// 							WebDriverManager.firefoxdriver().setup();
-// 							driver = new FirefoxDriver();
-// 							System.out.println("Launching Firefox Browser");
-// 							break;
-// 			case "Edge":
-// 							WebDriverManager.edgedriver().setup();
-// 							driver = new EdgeDriver();
-// 							System.out.println("Launching Edge Browser");
-// 							break;
-// 		}
+		switch(browserName){
+			case "Chrome":
+							WebDriverManager.chromedriver().setup();
+							driver = new ChromeDriver();
+							System.out.println("Launching Chrome Browser");
+							break;	
+			case "Firebox":
+							WebDriverManager.firefoxdriver().setup();
+							driver = new FirefoxDriver();
+							System.out.println("Launching Firefox Browser");
+							break;
+			case "Edge":
+							WebDriverManager.edgedriver().setup();
+							driver = new EdgeDriver();
+							System.out.println("Launching Edge Browser");
+							break;
+		}
 		
 		
 		driver.get("https://www.gitam.edu/");
