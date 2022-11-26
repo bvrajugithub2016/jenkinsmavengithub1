@@ -17,11 +17,7 @@ public class AppTest
 		String browserName =  System.getProperty("browser");
 		
  		WebDriver driver = null;
-		
-// 		WebDriverManager.chromedriver().setup();
-// 		driver = new ChromeDriver();
-// 		System.out.println("Launching Chrome Browser");
-		
+			
 		switch(browserName){
 			case "Chrome":
 							WebDriverManager.chromedriver().setup();
